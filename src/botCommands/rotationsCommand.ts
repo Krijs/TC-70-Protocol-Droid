@@ -1,5 +1,5 @@
 import { IIntentHandler } from "../interfaces/IIntentHandler";
-import { Message } from 'discord.js';
+import { Message, RichEmbed } from 'discord.js';
 import { Observable } from 'rxjs/Observable';
 import { IntentExecutor } from '../helpers/intentExecutor';
 import { IRankRotation } from '../interfaces/IRankRotation';
@@ -35,7 +35,7 @@ export class RotationsCommand implements IIntentHandler {
     }
 
     execute(m: Message, params: any[]) : Observable<boolean> {
-        let exec = new IntentExecutor(this._intents);
+        let exec = new IntentExecutor(this._intents, this.intent);
         return exec.tryExecute(m);
     }
 
@@ -140,8 +140,18 @@ export class RotationsCommand implements IIntentHandler {
                         //If ranks aren't provided, offset the rank numbers by one as the default ranks
                         //are generated from a zero-based index
                         let rankOffset = ranksProvided ? 0 : 1;
-                        m.reply(`\r\n${today.toFormat('yyyy-MM-dd')} rank designations:\r\n\r\n` +
-                                rankedPlayers.map(p => `#${p.rank + rankOffset} -> **${p.name}**`).join('\r\n'));
+                        // m.reply(`\r\n${today.toFormat('yyyy-MM-dd')} rank designations:\r\n\r\n` +
+                        //         rankedPlayers.map(p => `#${p.rank + rankOffset} -> **${p.name}**`).join('\r\n'));
+
+                        let embed = new RichEmbed();
+                        embed.setTitle(`Rank Designations`)
+                             .setDescription(`Here are the rank designations for ${today.toFormat('yyyy-MM-dd')}`)
+                             .setThumbnail('https://i.imgur.com/15SmBiw.png')
+                             .addBlankField();
+                        
+                        rankedPlayers.forEach((item, idx) => 
+                            embed.addField(`#${item.rank+rankOffset}`, item.name));
+                        m.channel.send({embed});
                         
                         o.complete();
                     });

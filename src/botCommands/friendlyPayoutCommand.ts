@@ -6,7 +6,6 @@ import { Message } from 'discord.js';
 import { Observable } from 'rxjs/Observable';
 import { IRankRotation } from '../interfaces/IRankRotation';
 import { DateTime } from 'luxon';
-import { IRotatingPlayer } from '../interfaces/IRotatingPlayer';
 import { DbConnector } from '../data/dbConnector';
 import { error } from 'util';
 export class FriendlyPayoutCommand extends HitlistPayoutCommand {

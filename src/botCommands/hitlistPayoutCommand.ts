@@ -1,6 +1,6 @@
 import { IIntentHandler } from '../interfaces/IIntentHandler';
 import { Observable } from 'rxjs/Observable';
-import { Message } from 'discord.js';
+import { Message, RichEmbed } from 'discord.js';
 import { PayoutHelper } from '../helpers/payoutHelper';
 import { ITimezoneConfig } from '../interfaces/ITimezoneConfig';
 import { IDatabaseConfig } from '../interfaces/IDatabaseConfig';
@@ -8,6 +8,8 @@ import { PayoutService, PayoutType, PayoutError } from '../services/payoutServic
 import { DbConnector } from '../data/dbConnector';
 import { ArrayExtensions } from '../extensions/arrayExtensions';
 import { IPayout } from '../interfaces/IPayout';
+import { IntentExecutor } from '../helpers/intentExecutor';
+import { error } from 'util';
 
 export class HitlistPayoutCommand implements IIntentHandler {
     intent = 'hitlist';
@@ -35,76 +37,73 @@ export class HitlistPayoutCommand implements IIntentHandler {
                 execute: (message, params) => this.clearPayouts(message) 
             },
             desc: `Remove all payouts from the list. Syntax: ${this.intent} clear`
-        },
-        {
-            handler: {
-                intent: '?',
-                execute: (message, params) => this.showHelp(message)
-            },
-            desc: `Shows help for payouts. Syntax: ${this.intent} ?`
         }
      ];
 
      protected _payoutService : PayoutService;
+     private _executor : IntentExecutor;
 
      constructor(protected timezones : ITimezoneConfig, protected dbCfg : IDatabaseConfig) { 
          this._payoutService = new PayoutService(this.payoutType, this.dbCfg);
      }
     
      execute(m: Message, params: any[]) : Observable<boolean> {
-        return Observable.create(o => {
-            if(params === undefined || params.length === 0) {
-                this.showPayouts(m);
-                o.complete();
-                return;
-            }
-    
-            let intent = params.shift();
-    
-            let matchedCommand = this._commandMap.find(cmd => cmd.handler.intent === intent);
-            if(matchedCommand === undefined) return;
-    
-            matchedCommand.handler.execute(m, params).subscribe(null, null, () => o.complete());
-        });
+        if(this._executor === undefined) {
+            this._executor = new IntentExecutor(this._commandMap, this.intent);
+            this._executor.setDefaultHandler((m, p) => this.showPayouts(m), 'View payouts');
+
+        }
+            
+        return this._executor.tryExecute(m);
     }
 
-    protected showPayouts(m:Message) {
-        this._payoutService.getPayouts(m.guild.id).subscribe(
-            payouts => {
-                //Could be factored into one line but leaving as vars as easier to debug.
-                let itemsGrouped =    
-                    Array.from(
-                        ArrayExtensions.groupBy(
-                            payouts.map(p => {
-                                p.timeToPayout = PayoutHelper.calculateTimeToPayout(p);
-                                return p;
-                            }), 
-                            //Can't use an object as a key in Maps, due to not being able to determine equality between objects
-                            p => `${p.timeToPayout.hours||0}h ${p.timeToPayout.minutes||0}m`)
-                    );
-
-                    //TODO: Sorting doesn't work
-                let itemsSorted = itemsGrouped
-                    .sort(this.comparePayoutArray);
-
-                let itemsMapped = itemsSorted
-                    .map(po =>[
-                        `**${po[0]} (${po[1][0].timezoneUTC})**`,
-                        po[1].map(p => {
-                                    let emoji = p.emoji ? `:${p.emoji}:` : '';
-                                    return `${emoji}${p.name}`})
-                                .reduce((a,b) => `${a}, ${b}`)]);
-
-                let itemsReduced = itemsMapped
-                    .reduce((a, b) => a.concat([''], b), [''])
-                    .join('\r\n');
-                
-                m.reply(itemsReduced.length <= 2 ? 'There are no payouts to show' : itemsReduced);
-            },
-            error => {
-                m.reply(`I'm unable to display payout info right now. Try again later.`);
-            }
-        );
+    protected showPayouts(m:Message) : Observable<boolean> {
+        return Observable.create(o => {
+            this._payoutService.getPayouts(m.guild.id).subscribe(
+                payouts => {
+                    //Could be factored into one line but leaving as vars as easier to debug.
+                    let itemsGrouped =    
+                        Array.from(
+                            ArrayExtensions.groupBy(
+                                payouts.map(p => {
+                                    p.timeToPayout = PayoutHelper.calculateTimeToPayout(p);
+                                    return p;
+                                }), 
+                                //Can't use an object as a key in Maps, due to not being able to determine equality between objects
+                                p => `${p.timeToPayout.hours||0}h ${p.timeToPayout.minutes||0}m`)
+                        );
+    
+                        //TODO: Sorting doesn't work
+                    let itemsSorted = itemsGrouped
+                        .sort(this.comparePayoutArray);
+    
+                    let itemsMapped = itemsSorted
+                        .map(po =>[
+                            `**${po[0]} (${po[1][0].timezoneUTC})**`,
+                            po[1].map(p => {
+                                        let emoji = p.emoji ? `:${p.emoji}:` : '';
+                                        return `${emoji}${p.name}`})
+                                    .reduce((a,b) => `${a}, ${b}`)]);
+                    
+                    let embed  = new RichEmbed();
+                    embed.setTitle(`Today's ${this.intent.charAt(0).toUpperCase()}${this.intent.substr(1)}`)
+                         .setThumbnail('https://i.imgur.com/BDdrJOX.png') //Should really use local imgs
+                         .setColor(this.payoutType === PayoutType.Friendly ? '#79B74C' : '#C70039')
+                         .addBlankField();
+                    itemsMapped.forEach((item, idx) => {
+                        embed.addField(item[0], item[1]);
+                        if(idx < itemsMapped.length-1) embed.addBlankField();
+                    });
+    
+                    m.channel.send({embed});
+                    o.complete();
+                },
+                error => {
+                    m.reply(`I'm unable to display payout info right now. Try again later.`);
+                    o.error(error);
+                }
+            );
+        });    
     }
 
     protected addPayout(m:Message, params : string[]) : Observable<boolean> {
