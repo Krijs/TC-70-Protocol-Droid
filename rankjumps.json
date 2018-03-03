@@ -1,0 +1,13 @@
+{
+    "jumps": [
+        { "from": 50, "to": 41, "maxJump": 9},
+        { "from": 40, "to": 39, "maxJump": 8},
+        { "from": 38, "to": 25, "maxJump": 7},
+        { "from": 24, "to": 19, "maxJump": 6},
+        { "from": 18, "to": 13, "maxJump": 5},
+        { "from": 12, "to": 5, "maxJump": 4},
+        { "from": 4, "to": 4, "maxJump": 3},
+        { "from": 3, "to": 3, "maxJump": 2},
+        { "from": 2, "to": 2, "maxJump": 1}
+    ]
+}
