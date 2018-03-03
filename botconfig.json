@@ -1,0 +1,8 @@
+{
+    "database": {
+        "url": "mongodb://localhost:27017",
+        "name": "payouts"
+    },
+   
+    "botToken": "<bot token here>"
+}

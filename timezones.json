@@ -1,0 +1,976 @@
+{
+  "Timezones": [
+    {
+      "Alias": "A",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "ACDT",
+      "UTCOffset": "UTC+10:30"
+    },
+    {
+      "Alias": "ACST",
+      "UTCOffset": "UTC+9:30"
+    },
+    {
+      "Alias": "ACT",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "ACT",
+      "UTCOffset": "UTC+9:30/+10:30"
+    },
+    {
+      "Alias": "ACWST",
+      "UTCOffset": "UTC+8:45"
+    },
+    {
+      "Alias": "ADT",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "ADT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "AEDT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "AEST",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "AET",
+      "UTCOffset": "UTC+10:00/+11:00"
+    },
+    {
+      "Alias": "AFT",
+      "UTCOffset": "UTC+4:30"
+    },
+    {
+      "Alias": "AKDT",
+      "UTCOffset": "UTC-8"
+    },
+    {
+      "Alias": "AKST",
+      "UTCOffset": "UTC-9"
+    },
+    {
+      "Alias": "ALMT",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "AMST",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "AMST",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "AMT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "AMT",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "ANAST",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "ANAT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "AQTT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "ART",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "AST",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "AST",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "AT",
+      "UTCOffset": "UTC-4:00/-3:00"
+    },
+    {
+      "Alias": "AWDT",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "AWST",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "AZOST",
+      "UTCOffset": "UTC+0"
+    },
+    {
+      "Alias": "AZOT",
+      "UTCOffset": "UTC-1"
+    },
+    {
+      "Alias": "AZST",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "AZT",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "AoE",
+      "UTCOffset": "UTC-12"
+    },
+    {
+      "Alias": "B",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "BNT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "BOT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "BRST",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "BRT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "BST",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "BST",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "BST",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "BTT",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "C",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "CAST",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "CAT",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "CCT",
+      "UTCOffset": "UTC+6:30"
+    },
+    {
+      "Alias": "CDT",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "CDT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "CEST",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "CET",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "CHADT",
+      "UTCOffset": "UTC+13:45"
+    },
+    {
+      "Alias": "CHAST",
+      "UTCOffset": "UTC+12:45"
+    },
+    {
+      "Alias": "CHOST",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "CHOT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "CHUT",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "CIDST",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "CIST",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "CKT",
+      "UTCOffset": "UTC-10"
+    },
+    {
+      "Alias": "CLST",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "CLT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "COT",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "CST",
+      "UTCOffset": "UTC-6"
+    },
+    {
+      "Alias": "CST",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "CST",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "CT",
+      "UTCOffset": "UTC-6:00/-5:00"
+    },
+    {
+      "Alias": "CVT",
+      "UTCOffset": "UTC-1"
+    },
+    {
+      "Alias": "CXT",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "ChST",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "D",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "DAVT",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "DDUT",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "E",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "EASST",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "EAST",
+      "UTCOffset": "UTC-6"
+    },
+    {
+      "Alias": "EAT",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "ECT",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "EDT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "EEST",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "EET",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "EGST",
+      "UTCOffset": "UTC+0"
+    },
+    {
+      "Alias": "EGT",
+      "UTCOffset": "UTC-1"
+    },
+    {
+      "Alias": "EST",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "ET",
+      "UTCOffset": "UTC-5:00/-4:00"
+    },
+    {
+      "Alias": "F",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "FET",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "FJST",
+      "UTCOffset": "UTC+13"
+    },
+    {
+      "Alias": "FJT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "FKST",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "FKT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "FNT",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "G",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "GALT",
+      "UTCOffset": "UTC-6"
+    },
+    {
+      "Alias": "GAMT",
+      "UTCOffset": "UTC-9"
+    },
+    {
+      "Alias": "GET",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "GFT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "GILT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "GMT",
+      "UTCOffset": "UTC+0"
+    },
+    {
+      "Alias": "GST",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "GST",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "GYT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "H",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "HADT",
+      "UTCOffset": "UTC-9"
+    },
+    {
+      "Alias": "HAST",
+      "UTCOffset": "UTC-10"
+    },
+    {
+      "Alias": "HKT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "HOVST",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "HOVT",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "I",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "ICT",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "IDT",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "IOT",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "IRDT",
+      "UTCOffset": "UTC+4:30"
+    },
+    {
+      "Alias": "IRKST",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "IRKT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "IRST",
+      "UTCOffset": "UTC+3:30"
+    },
+    {
+      "Alias": "IST",
+      "UTCOffset": "UTC+5:30"
+    },
+    {
+      "Alias": "IST",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "IST",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "JST",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "K",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "KGT",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "KOST",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "KRAST",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "KRAT",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "KST",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "KUYT",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "L",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "LHDT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "LHST",
+      "UTCOffset": "UTC+10:30"
+    },
+    {
+      "Alias": "LINT",
+      "UTCOffset": "UTC+14"
+    },
+    {
+      "Alias": "M",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "MAGST",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "MAGT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "MART",
+      "UTCOffset": "UTC-9:30"
+    },
+    {
+      "Alias": "MAWT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "MDT",
+      "UTCOffset": "UTC-6"
+    },
+    {
+      "Alias": "MHT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "MMT",
+      "UTCOffset": "UTC+6:30"
+    },
+    {
+      "Alias": "MSD",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "MSK",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "MST",
+      "UTCOffset": "UTC-7"
+    },
+    {
+      "Alias": "MT",
+      "UTCOffset": "UTC-7:00/-6:00"
+    },
+    {
+      "Alias": "MUT",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "MVT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "MYT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "N",
+      "UTCOffset": "UTC-1"
+    },
+    {
+      "Alias": "NCT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "NDT",
+      "UTCOffset": "UTC-2:30"
+    },
+    {
+      "Alias": "NFT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "NOVST",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "NOVT",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "NPT",
+      "UTCOffset": "UTC+5:45"
+    },
+    {
+      "Alias": "NRT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "NST",
+      "UTCOffset": "UTC-3:30"
+    },
+    {
+      "Alias": "NUT",
+      "UTCOffset": "UTC-11"
+    },
+    {
+      "Alias": "NZDT",
+      "UTCOffset": "UTC+13"
+    },
+    {
+      "Alias": "NZST",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "O",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "OMSST",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "OMST",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "ORAT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "P",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "PDT",
+      "UTCOffset": "UTC-7"
+    },
+    {
+      "Alias": "PET",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "PETST",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "PETT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "PGT",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "PHOT",
+      "UTCOffset": "UTC+13"
+    },
+    {
+      "Alias": "PHT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "PKT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "PMDT",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "PMST",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "PONT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "PST",
+      "UTCOffset": "UTC-8"
+    },
+    {
+      "Alias": "PST",
+      "UTCOffset": "UTC-8"
+    },
+    {
+      "Alias": "PT",
+      "UTCOffset": "UTC-8:00/-7:00"
+    },
+    {
+      "Alias": "PWT",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "PYST",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "PYT",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "PYT",
+      "UTCOffset": "UTC+8:30"
+    },
+    {
+      "Alias": "Q",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "QYZT",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "R",
+      "UTCOffset": "UTC-5"
+    },
+    {
+      "Alias": "RET",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "ROTT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "S",
+      "UTCOffset": "UTC-6"
+    },
+    {
+      "Alias": "SAKT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "SAMT",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "SAST",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "SBT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "SCT",
+      "UTCOffset": "UTC+4"
+    },
+    {
+      "Alias": "SGT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "SRET",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "SRT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "SST",
+      "UTCOffset": "UTC-11"
+    },
+    {
+      "Alias": "SYOT",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "T",
+      "UTCOffset": "UTC-7"
+    },
+    {
+      "Alias": "TAHT",
+      "UTCOffset": "UTC-10"
+    },
+    {
+      "Alias": "TFT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "TJT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "TKT",
+      "UTCOffset": "UTC+13"
+    },
+    {
+      "Alias": "TLT",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "TMT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "TOST",
+      "UTCOffset": "UTC+14"
+    },
+    {
+      "Alias": "TOT",
+      "UTCOffset": "UTC+13"
+    },
+    {
+      "Alias": "TRT",
+      "UTCOffset": "UTC+3"
+    },
+    {
+      "Alias": "TVT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "U",
+      "UTCOffset": "UTC-8"
+    },
+    {
+      "Alias": "ULAST",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "ULAT",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "UTC",
+      "UTCOffset": "UTC"
+    },
+    {
+      "Alias": "UYST",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "UYT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "UZT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "V",
+      "UTCOffset": "UTC-9"
+    },
+    {
+      "Alias": "VET",
+      "UTCOffset": "UTC-4"
+    },
+    {
+      "Alias": "VLAST",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "VLAT",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "VOST",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "VUT",
+      "UTCOffset": "UTC+11"
+    },
+    {
+      "Alias": "W",
+      "UTCOffset": "UTC-10"
+    },
+    {
+      "Alias": "WAKT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "WARST",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "WAST",
+      "UTCOffset": "UTC+2"
+    },
+    {
+      "Alias": "WAT",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "WEST",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "WET",
+      "UTCOffset": "UTC+0"
+    },
+    {
+      "Alias": "WFT",
+      "UTCOffset": "UTC+12"
+    },
+    {
+      "Alias": "WGST",
+      "UTCOffset": "UTC-2"
+    },
+    {
+      "Alias": "WGT",
+      "UTCOffset": "UTC-3"
+    },
+    {
+      "Alias": "WIB",
+      "UTCOffset": "UTC+7"
+    },
+    {
+      "Alias": "WIT",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "WITA",
+      "UTCOffset": "UTC+8"
+    },
+    {
+      "Alias": "WST",
+      "UTCOffset": "UTC+14"
+    },
+    {
+      "Alias": "WST",
+      "UTCOffset": "UTC+1"
+    },
+    {
+      "Alias": "WT",
+      "UTCOffset": "UTC+0"
+    },
+    {
+      "Alias": "X",
+      "UTCOffset": "UTC-11"
+    },
+    {
+      "Alias": "Y",
+      "UTCOffset": "UTC-12"
+    },
+    {
+      "Alias": "YAKST",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "YAKT",
+      "UTCOffset": "UTC+9"
+    },
+    {
+      "Alias": "YAPT",
+      "UTCOffset": "UTC+10"
+    },
+    {
+      "Alias": "YEKST",
+      "UTCOffset": "UTC+6"
+    },
+    {
+      "Alias": "YEKT",
+      "UTCOffset": "UTC+5"
+    },
+    {
+      "Alias": "Z",
+      "UTCOffset": "UTC+0"
+    }
+  ]
+}
