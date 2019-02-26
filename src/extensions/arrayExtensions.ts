@@ -13,4 +13,8 @@ export class ArrayExtensions {
         return map;
     }
 
+    public static isUndefinedNullOrEmpty(arr: any[]) : boolean {
+        return arr === undefined || arr === null || arr.length === 0;
+    }
+
 }

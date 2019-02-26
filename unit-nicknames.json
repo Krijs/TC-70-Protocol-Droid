@@ -1,0 +1,498 @@
+{
+    "dictionary": [               
+        {
+            "fullName": "Ahsoka Tano (Fulcrum)",
+            "alternatives": [
+                "ATF",
+                "FAT"
+            ]
+        },
+        {
+            "fullName": "Bastila Shan (Fallen)",
+            "alternatives": [
+                "Badstila",
+                "Darth Karen",
+                "Bastilla Shan (Fallen)",
+                "Dark Bastila",
+                "BSF"
+            ]
+        },
+        {
+            "fullName": "Bastila Shan",
+            "alternatives": [
+                "BS"
+            ]
+        },
+        {
+            "fullName": "BB-8",
+            "alternatives": [
+                "BB8"
+            ]
+        },
+        {
+            "fullName": "Bodhi Rook",
+            "alternatives": [
+                "Bohdi"
+            ]
+        },
+        {
+            "fullName": "Captain Han Solo",
+            "alternatives": [
+                "CHS",
+                "Cholo",
+                "Hoth Han",
+                "Cold Han"
+            ]
+        },        
+        {
+            "fullName": "Chief Chirpa",
+            "alternatives": [
+                "Chirps"
+            ]
+        },
+        {
+            "fullName": "Commander Luke Skywalker",
+            "alternatives": [
+                "CLS"
+            ]
+        },
+        {
+            "fullName": "Clone Sergeant - Phase I",
+            "alternatives": [
+                "Sarge",
+                "Clone Sarge"            
+            ]
+        },
+        {
+            "fullName": "Coruscant Underworld Police",
+            "alternatives": [
+                "CUP",
+                "GOD"
+            ]
+        },
+        {
+            "fullName": "Darth Nihilus",
+            "alternatives": [
+                "DN",
+                "Nye"
+            ]
+        },
+        {
+            "fullName": "Darth Sidious",
+            "alternatives":[
+                "Sid"
+            ]
+        },
+        {
+            "fullName": "Darth Sion",
+            "alternatives": [
+                "Scion"
+            ]
+        },
+        {
+            "fullName": "Darth Traya",
+            "alternatives": [
+                "Treya",
+                "Kreia"
+            ]
+        },
+        {
+            "fullName": "Death Trooper",
+            "alternatives": [
+                "DT",
+                "Deathtrooper"
+            ]
+        },
+        {
+            "fullName": "Director Krennic",
+            "alternatives": [
+                "DK"
+            ]
+        },
+        {
+            "fullName": "Ewok Elder",
+            "alternatives":[
+                "EE"
+            ]
+        },
+        {
+            "fullName": "First Order Executioner",
+            "alternatives": [
+                "FOX",
+                "FOE",
+                "FOEX"
+            ]
+        },
+        {
+            "fullName": "First Order Officer",
+            "alternatives": [
+                "FOO"
+            ]
+        },
+        {
+            "fullName": "First Order Stormtrooper",
+            "alternatives": [
+                "FOST"
+            ]
+        },
+        {
+            "fullName": "First Order SF TIE Pilot",
+            "alternatives": [
+                "FOSFTP"
+            ]
+        }, 
+        {
+            "fullName": "First Order TIE Pilot",
+            "alternatives": [
+                "FOTP"
+            ]
+        },
+        {
+            "fullName": "General Grievous",
+            "alternatives": [
+                "GG",
+                "General Grevious"
+            ]
+        },
+        {
+            "fullName": "General Kenobi",
+            "alternatives": [
+                "GK"
+            ]
+        }, 
+        {
+            "fullName": "Geonosian Soldier",
+            "alternatives": [
+                "GSoldier",                
+                "Geo Soldier"
+            ]
+        },
+        {
+            "fullName": "Geonosian Spy",
+            "alternatives": [
+                "GSpy",
+                "Spy",
+                "Geo Spy"
+            ]
+        }, 
+        {
+            "fullName": "Sun Fac",
+            "alternatives": [
+                "SF",
+                "Fun Sac"
+            ]
+        },
+        {
+            "fullName": "Grand Admiral Thrawn",
+            "alternatives": [
+                "GAT"
+            ]
+        },
+        {
+            "fullName": "Grand Master Yoda",
+            "alternatives": [
+                "GMY",
+                "GMYoda"
+            ]
+        }, 
+        {
+            "fullName": "Grand Moff Tarkin",
+            "alternatives": [
+                "GMT",
+                "Tarks"
+            ]
+        },
+        {
+            "fullName": "Han Solo",
+            "alternatives": [
+                "Raid Han",
+                "RHan",
+                "OG Han",
+                "OGHan"
+            ]
+        },
+        {
+            "fullName": "Hermit Yoda",
+            "alternatives": [
+                "HYoda",
+                "HY",
+                "Hoda"
+            ]
+        },
+        {
+            "fullName": "Hoth Rebel Scout",
+            "alternatives": [
+                "HRSc"
+            ]
+        },
+        {
+            "fullName": "Hoth Rebel Soldier",
+            "alternatives": [
+                "HRS"
+            ]
+        },
+        {
+            "fullName": "IG-86 Sentinal Droid",
+            "alternatives": [
+                "IG86"                
+            ]
+        },
+        {
+            "fullName": "IG-88",
+            "alternatives": [
+                "IG88"
+            ]
+        },
+        {
+            "fullName": "Ima-Gun Di",
+            "alternatives": [
+                "IGD"
+            ]
+        },
+        {
+            "fullName": "Imperial Probe Droid",
+            "alternatives":[
+                "IPD"
+            ]
+        },
+        {
+            "fullName": "Imperial Super Commando",
+            "alternatives": [
+                "ISC"
+            ]
+        },        
+        {
+            "fullName": "Jedi Consular",
+            "alternatives": [
+                "JC",
+                "Jedi Counselor"
+            ]
+        },
+        {
+            "fullName": "Jedi Knight Anakin",
+            "alternatives": [
+                "JKA"
+            ]
+        },
+        {
+            "fullName": "Jedi Knight Guardian",
+            "alternatives": [
+                "JKG"
+            ]
+        },
+        {
+            "fullName": "Jyn Erso",
+            "alternatives": [
+                "Jin"
+            ]
+        },
+        {
+            "fullName": "Kanan Jarrus",
+            "alternatives": [
+                "Kanaan",
+                "Kaanan"
+            ]
+        },        
+        {
+            "fullName": "K-2SO",
+            "alternatives": [
+                "K2"
+            ]
+        },
+        {
+            "fullName": "Kylo Ren (Unmasked)",
+            "alternatives": [
+                "KRU",
+                "Matt",
+                "Matt the Radar Technician"
+            ]
+        },
+        {
+            "fullName": "Lando Calrissian",
+            "alternatives": [
+                "Lando"
+            ]
+        },
+        {
+            "fullName": "Luke Skywalker (Farmboy)",
+            "alternatives": [
+                "Farmboy Luke",
+                "FLuke",
+                "FBL"
+            ]
+        },
+        {
+            "fullName": "Mother Talzin",
+            "alternatives": [
+                "MT"
+            ]
+        },
+        {
+            "fullName": "Nightsister Acolyte",
+            "alternatives": [
+                "NA"
+            ]
+        },
+        {
+            "fullName": "Nightsister Initiate",
+            "alternatives":  [
+                "NI"
+            ]
+        },        
+        {
+            "fullName": "Obi-Wan Kenobi (Old Ben)",
+            "alternatives": [
+                "OB"
+            ]
+        }, 
+        {
+            "fullName": "Princess Leia",
+            "alternatives": [
+                "Leia"
+            ]
+        },
+        {
+            "fullName": "Qi'ra",
+            "alternatives": [
+                "Qira",
+                "Kira",
+                "Quira"
+            ]
+        },
+        {
+            "fullName": "Qui-Gon Jinn",
+            "alternatives": [
+                "QGJ",
+                "Qui Gon Jinn"
+            ]
+        },
+        {
+            "fullName": "Rebel Officer Leia Organa",
+            "alternatives": [
+                "ROLO"
+            ]
+        },
+        {
+            "fullName": "Resistance Pilot",
+            "alternatives": [
+                "RP",
+                "Res Pilot"
+            ]
+        },
+        {
+            "fullName": "Resistance Trooper",
+            "alternatives": [
+                "RT",
+                "Res Trooper"
+            ]
+        },
+        {
+            "fullName": "Rey (Jedi Training)",
+            "alternatives": [
+                "RJT",
+                "JTR",
+                "JRT",
+                "JRey"
+            ]
+        },
+        {
+            "fullName": "Rey (Scavenger)",
+            "alternatives": [
+                "Scav Rey",
+                "SRey"
+            ]
+        }, 
+        {
+            "fullName": "Royal Guard",
+            "alternatives": [
+                "RG",
+                "Imperial Guard"
+            ]
+        },
+        {
+            "fullName": "Scarif Rebel Pathfinder",
+            "alternatives": [
+                "SRP"
+            ]
+        },
+        {
+            "fullName": "Shoretrooper",
+            "alternatives": [
+                "ShT"
+            ]
+        },
+        {
+            "fullName": "Stormtrooper",
+            "alternatives": [
+                "ST"
+            ]
+        },
+        {
+            "fullName": "Sith Assassin",
+            "alternatives": [
+                "SA",
+                "SAss",
+                "Sith Assasin"
+            ]
+        },
+        {
+            "fullName": "Sith Trooper",
+            "alternatives": [
+                "SiT"
+            ]
+        },
+        {
+            "fullName": "Stormtrooper Han",
+            "alternatives": [
+                "STH",
+                "STHan"
+            ]
+        }, 
+        {
+            "fullName": "TIE Fighter Pilot",
+            "alternatives": [
+                "TFP"
+            ]
+        },
+        {
+            "fullName": "Vandor Chewbacca",
+            "alternatives": [
+                "Vandor Chewie",
+                "Vandor Chewy"
+            ]
+        },
+        {
+            "fullName": "Veteran Smuggler Han Solo",
+            "alternatives": [
+                "Vet Han"
+            ]
+        },
+        {
+            "fullName": "Veteran Smuggler Chewbacca",
+            "alternatives": [
+                "Vet Chewie",
+                "Vet Chewy"
+            ]
+        },
+        {
+            "fullName": "Young Han Solo",
+            "alternatives": [
+                "YOLO",
+                "YHan"
+            ]
+        },
+        {
+            "fullName": "Young Lando Calrissian",
+            "alternatives": [
+                "YLando"
+            ]
+        },
+        {
+            "fullName": "Zam Wesell",
+            "alternatives": [
+                "Zam Wessel",
+                "Zam Wessell"
+            ]
+        }        
+    ]
+}

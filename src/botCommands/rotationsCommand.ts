@@ -11,6 +11,7 @@ import { DateTime, Interval } from 'luxon';
 
 export class RotationsCommand implements IIntentHandler {
     intent: string | string[] = 'rotations';
+    intentDepth = 0;
 
     private _payoutService : PayoutService;
     private _intents : IIntentCollection = [

@@ -5,6 +5,7 @@ import { DateTime, Interval } from 'luxon';
 
 export class PingCommand implements IIntentHandler {
     intent: string = 'ping';
+    intentDepth = 0;
 
     execute(m: Message, params: any[]) : Observable<boolean> {
         return Observable.create(o => {

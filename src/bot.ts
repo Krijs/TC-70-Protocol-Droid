@@ -17,10 +17,16 @@ import { IArenaJumpConfig } from './interfaces/IArenaJumpConfig';
 import { ArenaCommand } from './botCommands/arenaCommand';
 import { IntentExecutor } from './helpers/intentExecutor';
 import { IIntentCollection } from './interfaces/IIntentCollection';
+import { TwCommand } from './botCommands/twCommand';
+import { GuildCommand } from './botCommands/guildCommand';
+import { UnitCommand } from './botCommands/unitCommand';
+import { INicknameConfig } from './interfaces/INicknameConfig';
+import { ScheduleCommand } from './botCommands/scheduleCommand';
 export class Bot {
     private _botConfig = new Config<IBotConfig>('botconfig.json');
     private _timezoneConfig = new Config<ITimezoneConfig>('timezones.json');
     private _arenaJumpConfig = new Config<IArenaJumpConfig>('rankjumps.json');
+    private _nicknameConfig = new Config<INicknameConfig>('unit-nicknames.json');
     private _serverPrefixManager = new ServerPrefixManager(this._botConfig.config);
 
     private intents : IIntentCollection = [
@@ -34,7 +40,11 @@ export class Bot {
         { handler: new RotationsCommand(this._botConfig.config.database), 
           desc: 'Manage rank rotations for payouts. Type <prefix>rotations ? for more info' },
         { handler: new ArenaCommand(this._arenaJumpConfig.config), 
-          desc: 'TC-70 will calculate the most efficient arena climb path. Syntax <prefix>arena <startingRank>' }
+          desc: 'TC-70 will calculate the most efficient arena climb path. Syntax <prefix>arena <startingRank>' },
+        { handler: new TwCommand(this._botConfig.config.database, this._nicknameConfig.config), desc: 'View and manage TW defense'},
+        { handler: new GuildCommand(this._botConfig.config.database), desc: 'View and manage your guild details'},
+        { handler: new UnitCommand(this._botConfig.config.database, this._nicknameConfig.config), desc: 'View and manage SWGOH unit data'},
+        { handler: new ScheduleCommand(this._botConfig.config.database, this._nicknameConfig.config), desc: 'Schedule messages to the server'}
       ];
 
       private _executor : IntentExecutor;
@@ -56,8 +66,8 @@ export class Bot {
         const client = new Client();
 
         client.on('ready', () => {
-         console.log('Successfully connected to Discord');  
-        });
+             console.log('Successfully connected to Discord');           
+        });        
         
         client.on('message', message => {   
             this._executor.tryExecute(message).subscribe(
@@ -66,39 +76,14 @@ export class Bot {
                     message.channel.stopTyping();
                     message.reply('Sorry, I encountered some issues with that command. Please try again');
                 },
-                () => message.channel.stopTyping()
-            );
-            // this.getServerPrefix(message.guild.id).subscribe(
-            //     prefix => {
-            //         if(!message.content.startsWith(prefix)) return;
-            
-            //         //Parse intent and trailing parameters
-            //         let splitContent = message.content.substring(prefix.length).split(' ');
-            //         let intent = splitContent[0];
-            //         let params = splitContent.slice(1);
+                () => {
+                    // this._serverPrefixManager.getPrefixes().subscribe(prefixes => {
+                    //     console.log(`Prefix for this server: ${prefixes.join('|')}`);
+                    // });
                     
-            //         //Find intent and if it exists, execute it
-            //         let matchedintent = this.intents.find(cmd => cmd.intent === intent);
-            //         if(matchedintent === undefined) return;
-                    
-            //         try {
-            //             message.channel.startTyping();
-            //             matchedintent.execute(message, params).subscribe(
-            //                 null,
-            //                 error => {
-            //                     message.channel.stopTyping();
-            //                     message.reply('Rarggghh! Sorry, I encountered some issues with that command. Please try again');
-            //                 },
-            //                 () => {
-            //                     message.channel.stopTyping();
-            //                 }
-            //             );
-            //         } catch (error) {
-            //             console.error(error);
-            //             message.reply('Rarggghh! Sorry, I encountered some issues with that command. Please try again');
-            //         }
-            //     }
-            // );
+                    message.channel.stopTyping();
+                }
+            );           
         });
         
         client.login(this._botConfig.config.botToken);

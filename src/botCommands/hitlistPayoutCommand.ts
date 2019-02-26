@@ -13,6 +13,7 @@ import { error } from 'util';
 
 export class HitlistPayoutCommand implements IIntentHandler {
     intent = 'hitlist';
+    intentDepth = 1;
 
     protected payoutType : PayoutType = PayoutType.Foe;
  
@@ -50,6 +51,7 @@ export class HitlistPayoutCommand implements IIntentHandler {
      execute(m: Message, params: any[]) : Observable<boolean> {
         if(this._executor === undefined) {
             this._executor = new IntentExecutor(this._commandMap, this.intent);
+            this._executor.intentDepth = this.intentDepth;
             this._executor.setDefaultHandler((m, p) => this.showPayouts(m), 'View payouts');
 
         }

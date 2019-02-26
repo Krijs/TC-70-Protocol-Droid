@@ -8,6 +8,7 @@ import { error } from 'util';
 import { Observable } from 'rxjs/Observable';
 export class PrefixCommand implements IIntentHandler {
     intent: string = 'prefix';
+    intentDepth = 0;
 
     constructor(private botConfig : IBotConfig, private serverPrefixManager : ServerPrefixManager) {}
 

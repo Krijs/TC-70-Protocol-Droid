@@ -4,6 +4,7 @@ import { IIntentCollection } from '../interfaces/IIntentCollection';
 import { Message, RichEmbed } from 'discord.js';
 import { Observer } from 'rxjs/Observer';
 export class IntentExecutor {
+    intentDepth = 0;
 
     constructor(private intents : IIntentCollection, private intent? : string | string[],
                 private prefixManager? : ServerPrefixManager) {
@@ -37,6 +38,9 @@ export class IntentExecutor {
             } else {
                 this.getServerPrefix(message.guild.id).subscribe(
                     prefix => {
+                        console.log(`prefix: ${prefix}`);
+                        console.log(`message: ${message.content}`);
+                        console.log(message.content.startsWith(prefix));
                         if(!message.content.startsWith(prefix)) {
                             o.complete();
                             return;
@@ -78,13 +82,33 @@ export class IntentExecutor {
 
     private parseIntent(message : Message, o : Observer<boolean>, prefix? : string) {
         //Parse intent and trailing parameters
-        let splitContent = (prefix ? message.content.substring(prefix.length) : message.content).split(' ');
-        let intent = splitContent[prefix ? 0 : 1];
-        let params = splitContent.slice(prefix ? 1 : 2);
+        //  let splitContent2 = (prefix ? message.content.substring(prefix.length) : message.content).split(' ');
+        //  let intent2 = splitContent2[prefix ? 0 : 1];
+        //  let params2 = splitContent2.slice(prefix ? 1 : 2);
+
+        //  console.log('==============');
+        //  console.log(`splitContent old: ${splitContent2}`);
+        // console.log(`intent old: ${intent2}`);
+        // console.log(`params old: ${params2}`);
+
+
+        let splitContent = message.content.split(' ');
+        let intent = splitContent[this.intentDepth];
+        let params = splitContent.slice(this.intentDepth + 1);
+
+        if(intent !== undefined && prefix !== undefined) {
+            intent = intent.replace(prefix, '');
+        }
+
+        // console.log(`splitContent: ${splitContent}`);
+        // console.log(`intent: ${intent}`);
+        // console.log(`params: ${params}`);
+        // console.log('==============');
         
         //Find intent and if it exists, execute it
         let matchedintent = this.intents.find(cmd => cmd.handler.intent === intent)
             || this.intents.find(cmd => cmd.default);
+        
         if(matchedintent === undefined) {
             o.complete();
             return;

@@ -3,5 +3,6 @@ import { Observable } from 'rxjs/Observable';
 
 export interface IIntentHandler {
     intent: string | string[];
+    intentDepth?: number;
     execute: (m : Message, params : any[]) => Observable<boolean>;
 }

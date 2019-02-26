@@ -6,6 +6,7 @@ import { IArenaJumpConfig } from '../interfaces/IArenaJumpConfig';
 
 export class ArenaCommand implements IIntentHandler {
     intent: string | string[] = 'arena';
+    intentDepth = 0;
 
     constructor(private arenaJumpConfig : IArenaJumpConfig) {}
 
